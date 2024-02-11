@@ -86,7 +86,6 @@ def message_cb(bot, event):
                     'Михаил Владимирович, сегодня не обновлён дашборд {0}, лист {1}, отвественного пользователя я не нашел. Может Вы знаете, кто за этот показатель может отвечать?'
                     .format(db_name, line), 'aleksey.zaharov@tularegion.ru')
 
-
 def send_alert(text_to_send, chat):
     print('chat: ', chat)
     print('text_to_send: ', text_to_send)
