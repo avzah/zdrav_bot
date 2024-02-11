@@ -41,12 +41,13 @@ def message_cb(bot, event):
 
     if not zdrav_all:
         print("Сегодня нет замечаний по здраву")
+        send_alert(
+            'Алексей Викторович, сегодня необновлённых дашбордов здравоохранения нет',
+            'aleksey.zaharov@tularegion.ru')
 
     d_bd = {}
     all_zdrav_strings = zdrav_all.split('Информационная панель: ')
     del all_zdrav_strings[0]
-
-    # all_zdrav_strings = all_zdrav_strings[0].split('.')[0]
 
     print("*0*")
     print(all_zdrav_strings)
